@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sissors Game </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <section class="rock_paper_sissors">
+            <header><h1>Rock Paper Scissors </h1></header>
+            <div class="score_game">
+                <span id="computer_score">
+                    0
+                </span>
+                :
+                <span id="user_score">
+                    0
+                </span>
+                <div id="user" class="player">you</div>
+                <div id="computer" class="player">computer</div>
+            </div>
+
+                <div class="borad_game">
+                    <div class="box_result" style="display: none;">
+                        <p>
+                           
+                        </p>
+                    </div>
+                
+                    <div id="compare_vs" class="box_circles" style="display: none;">
+                        <div class="computer circle_item"><img src=""></div>
+                        <div>/<br>VS<br>/</div>
+                        <div class="user circle_item"><img src=""> </div>
+                        
+                    </div> 
+
+                    <div class="repeat_game" style="display: none;">
+                        <button>Again</button>
+                    </div>
+
+                    <div id="choices" class="box_circles" style="display: flex;">
+                        <div id="rock" class="choice circle_item" onclick="
+                            get_user_choice('rock',get_computer_choice())"><img src="rock.svg"></div>
+                        <div id="paper" class="choice circle_item" onclick=" get_user_choice('paper',get_computer_choice())"><img src="paper.svg"></div>
+                        <div id="scissor" class="choice circle_item" onclick="get_user_choice('scissor',get_computer_choice())"><img src="scissors.svg"></div>
+                    </div>
+                    
+                </div>
+
+            <footer>
+                <p>
+                    Make your Move 
+                </p>
+            </footer>
+        </section>
+            
+       
+    <script src="script.js"></script>
+</body>
+</html>
